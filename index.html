@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madhav Kalagani | Portfolio</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: linear-gradient(135deg, #ff9a9e, #fad0c4); color: #333; }
+        header { background: #ff4b5c; color: #fff; padding: 20px; text-align: center; }
+        section { padding: 20px; max-width: 900px; margin: auto; transition: transform 0.3s ease-in-out; }
+        .container { background: rgba(255, 255, 255, 0.9); padding: 20px; box-shadow: 0px 0px 10px rgba(0,0,0,0.1); border-radius: 8px; }
+        .contact a { text-decoration: none; color: #ff4b5c; font-weight: bold; }
+        ul { padding-left: 20px; }
+        .cta { text-align: center; margin-top: 20px; }
+        .cta a, .hireme-btn { background: #ff4b5c; color: #fff; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-weight: bold; transition: background 0.3s, transform 0.2s; display: inline-block; }
+        .cta a:hover, .hireme-btn:hover { background: #d63447; transform: scale(1.05); }
+        .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.8s ease-out, transform 0.8s ease-out; }
+        .skills-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .skill-card { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); text-align: center; }
+        .skill-name { font-weight: bold; margin-bottom: 10px; font-size: 18px; }
+        .progress-bar { height: 12px; border-radius: 6px; background: #ddd; position: relative; overflow: hidden; }
+        .progress { height: 12px; border-radius: 6px; background: linear-gradient(90deg, #ff4b5c, #ff6b81); position: absolute; top: 0; left: 0; transition: width 1s ease-in-out; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Madhav Kalagani</h1>
+        <p>SAP CPI Consultant | Cloud Integration Specialist</p>
+    </header>
+    <section class="fade-in">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am an experienced SAP CPI Consultant with over 3 years of expertise in designing, developing, and optimizing cloud-based integrations. My focus is on building scalable, secure, and high-performing integration solutions that enhance enterprise operations.</p>
+            <p>With a strong background in SAP Cloud Platform Integration (CPI), Groovy scripting, and middleware technologies, I have successfully led multiple integration projects, streamlining enterprise workflows. My expertise extends to API development, error handling, performance tuning, and security enhancements.</p>
+        </div>
+    </section>
+    <section class="fade-in">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <div class="skill-name">SAP Cloud Platform Integration</div>
+                    <div class="progress-bar"><div class="progress" style="width: 95%;"></div></div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Groovy Scripting</div>
+                    <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Integration & Middleware</div>
+                    <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Security & Authentication</div>
+                    <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="fade-in">
+        <div class="container">
+            <h2>Experience</h2>
+            <h3>Tech Mahindra</h3>
+            <p><em>SAP CPI Consultant | Sep 2021 - Present</em></p>
+            <ul>
+                <li>Designed and deployed secure SAP CPI-based integrations for seamless enterprise data exchange.</li>
+                <li>Developed custom Groovy scripts to automate transformation, routing, and error handling.</li>
+                <li>Implemented performance optimizations in SAP CPI, reducing response time by 25%.</li>
+                <li>Integrated SAP and third-party systems via APIs, improving cross-platform connectivity.</li>
+                <li>Conducted end-to-end testing (SIT/UAT) ensuring 99.9% deployment success rates.</li>
+            </ul>
+        </div>
+    </section>
+    <section class="fade-in">
+        <div class="container">
+            <h2>Projects</h2>
+            <h3>Ahlstrom-Munksjö ERP Integration</h3>
+            <ul>
+                <li>Developed and managed seamless ERP integration between SAP ECC and financial systems (IFS, JDE, Nomentia, Chrome River).</li>
+                <li>Optimized iFlows, reducing processing time by 20% and improving efficiency.</li>
+                <li>Implemented advanced exception handling to improve data accuracy and reconciliation.</li>
+            </ul>
+        </div>
+    </section>
+    <section class="fade-in">
+        <div class="container contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:madhavmanikanta44@gmail.com">madhavmanikanta44@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/madhavkalagani" target="_blank">linkedin.com/in/madhavkalagani</a></p>
+        </div>
+    </section>
+    <section class="cta fade-in">
+        <p>Interested in working together? Let's connect!</p>
+        <a class="hireme-btn" href="mailto:madhavmanikanta44@gmail.com?subject=Job Opportunity&body=Hi Madhav,%0D%0A%0D%0AI came across your portfolio and would like to discuss a job opportunity with you. Let me know a suitable time to connect.%0D%0A%0D%0AThanks!" target="_blank">Hire Me</a>
+    </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let fadeElements = document.querySelectorAll(".fade-in");
+            fadeElements.forEach((el, index) => {
+                setTimeout(() => {
+                    el.style.opacity = 1;
+                    el.style.transform = "translateY(0)";
+                }, index * 300);
+            });
+        });
+    </script>
+</body>
+</html>
